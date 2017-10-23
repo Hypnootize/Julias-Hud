@@ -704,6 +704,53 @@
 			"scaleImage"	"1"
 		}
 	}
+	
+	"juliaWarPaints"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"juliaWarPaints"
+		"xpos"			"16"
+		"ypos"			"350"
+		"zpos"			"10"
+		"wide"			"256"
+		"tall"			"24"
+		"visible"		"1"
+		"enabled"		"1"
+		"textinsetx"	"18"
+		"textinsety"	"-7"
+		"use_proportional_insets" "1"
+
+		"font"			"juliaMedium"
+		"textAlignment"	"west"
+		"default"		"0"
+		"border_default"	"juliaNone"
+		"border_armed"		"juliaNone"
+
+		"paintbackground"	"0"
+		"defaultFgColor_override" "juliaFG"
+		"armedFgColor_override" "juliaFG"
+		"depressedFgColor_override" "juliaFG"
+
+		"image_default"		"replay/thumbnails/box"
+		"image_armed"		"replay/thumbnails/boxinverse"
+
+		"Command"			"paintkit_preview"
+		"labelText"			"war paints"
+
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"0"
+			"ypos"			"0"
+			"zpos"			"1"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+		}
+	}
 
 	"scout"
 	{
@@ -1146,5 +1193,18 @@
 		"tall"				"480"
 		"zpos"				"500"
 		"visible"			"1"
+	}
+	
+	"InspectionPanel"
+	{
+		"fieldName"		"InspectionPanel"
+		"xpos"			"cs-0.5"
+		"ypos"			"0"
+		"zpos"			"2000"
+		"wide"			"f0"
+		"tall"			"f100"
+		"visible"		"0"
+		"proportionaltoparent"	"1"
+		"bgcolor_override"	"30 25 25 245"
 	}
 }

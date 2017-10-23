@@ -67,6 +67,7 @@
 		"tabwidth"		"0"
 		"tabheight"		"0"
 		"transition_time" "0"
+		"yoffset"		"11"
 
 		"HeaderLine"
 		{
@@ -84,8 +85,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"juliaBack"
-		"xpos"			"-8"
-		"ypos"			"-8"
+		"xpos"			"16"
+		"ypos"			"r33"
 		"zpos"			"3"
 		"wide"			"32"
 		"tall"			"32"
