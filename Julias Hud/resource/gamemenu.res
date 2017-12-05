@@ -53,24 +53,6 @@
 
 	//all the time
 
-	"juliaQuickplayButton"
-	{
-		"label" 	"casual"
-		"command"	"play_casual"
-	}
-
-	"juliaMannVsMachineButton"
-	{
-		"label"		"mann vs. machine"
-		"command"	"play_mvm"
-	}
-
-	"juliaCompetitiveButton"
-	{
-		"label"		"competitive"
-		"command"	"play_competitive"
-	}
-
 	"juliaServerBrowserButton"
 	{
 		"label"		"server browser"

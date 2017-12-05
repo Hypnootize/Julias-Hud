@@ -130,6 +130,44 @@
 		"pin_corner_to_sibling" "1"
 		"pin_to_sibling_corner" "1"
 	}
+	"PlayerStatusGasImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusGasImage"
+		"xpos"			"85"
+
+		"ypos"			"0"
+		"zpos"			"8"
+		"wide"			"32"
+		"tall"			"32"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"../vgui/covered_in_gas"
+		"fgcolor"		"TanDark"
+		"pin_to_sibling" "IconAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
+	"PlayerStatusSlowed"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusSlowed"
+		"xpos"			"85"
+
+		"ypos"			"0"
+		"zpos"			"8"
+		"wide"			"32"
+		"tall"			"32"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"../vgui/slowed"
+		"fgcolor"		"TanDark"
+		"pin_to_sibling" "IconAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
 	"PlayerStatusMilkImage"
 	{
 		"ControlName"	"ImagePanel"

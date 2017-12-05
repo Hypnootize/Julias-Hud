@@ -66,14 +66,13 @@
 		}
 	}
 
-
 	"WatchStreamButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"WatchStreamButton"
-		"xpos"			"r48"
-		"ypos"			"16"
-		"zpos"			"10"
+		"xpos"			"r40"
+		"ypos"			"30"
+		"zpos"			"26"
 		"wide"			"32"
 		"tall"			"32"
 		"autoResize"	"0"
@@ -131,7 +130,7 @@
 		"fieldName"		"StreamListPanel"
 		"xpos"			"r336"
 		"ypos"			"64"
-		"zpos"			"1"
+		"zpos"			"17"
 		"wide"			"320"
 		"tall"			"316"
 		"visible"		"0"
@@ -146,7 +145,7 @@
 		"fieldName"		"Notifications_Panel"
 		"xpos"			"r336"
 		"ypos"			"64"
-		"zpos"			"10"
+		"zpos"			"17"
 		"wide"			"320"
 		"tall"			"320"
 		"visible"		"0"
@@ -248,13 +247,177 @@
 			}
 		}
 	}
+	
+	"RankModelPanel"
+	{
+		"ControlName"	"CPvPRankPanel"
+		"fieldName"		"RankModelPanel"
+		"xpos"			"r385"
+		"ypos"			"cs-0.5-145"
+
+		"zpos"			"2"
+		"wide"			"700"
+		"tall"			"700"
+		"visible"		"1"
+		"proportionaltoparent"	"1"
+		"mouseinputenabled"	"1"
+
+		"matchgroup"	"MatchGroup_Casual_12v12"
+
+		"show_progress"	"0"
+	}
+	
+	"RankPanel"
+	{
+		"ControlName"	"CPvPRankPanel"
+		"fieldName"		"RankPanel"
+		"xpos"			"r230"
+		"ypos"			"100"
+		"zpos"			"1"
+		"wide"			"320"
+		"tall"			"120"
+		"visible"		"1"
+		"proportionaltoparent"	"1"
+		"mouseinputenabled"	"0"
+
+		"matchgroup"	"MatchGroup_Casual_12v12"
+		"xp_source_notification_center_x"	"350"
+
+		"show_model"	"0"
+	}
+	
+	"FriendsContainer"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"FriendsContainer"
+		"xpos"			"r140"
+		"ypos"			"180"
+		"zpos"			"11"
+		"wide"			"150"
+		"tall"			"300"
+		"visible"		"1"
+
+		"bgcolor_override"		"0 0 0 0"
+
+		"TitleLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"TitleLabel"
+			"font"			"juliaMedium"
+			"labelText"		"#TF_Competitive_Friends"
+			"textAlignment"	"east"
+			"xpos"			"0"
+			"ypos"			"5"
+			"wide"			"130"
+			"tall"			"30"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"	"0"
+			"fgcolor_override"	"juliaFG"
+		}
+
+		"InnerShadow"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldname"		"InnerShadow"
+			"xpos"			"cs-0.5"
+			"ypos"			"rs1-10"
+			"zpos"			"501"
+			"wide"			"f20"
+			"tall"			"110"
+			"visible"		"0"	
+			"PaintBackgroundType"	"0"
+			"proportionaltoparent"	"1"
+			"mouseinputenabled"	"0"
+
+			"paintborder"	"1"
+			"border"		"InnerShadowBorder"
+		}
+
+		"SteamFriendsList"
+		{
+			"ControlName"	"CSteamFriendsListPanel"
+			"fieldname"		"SteamFriendsList"
+			"xpos"			"cs-0.5"
+			"ypos"			"rs1-10"
+			"zpos"			"500"
+			"wide"			"f20"
+			"tall"			"260"
+			"visible"		"1"
+			"proportionaltoparent"	"1"
+
+			"columns_count"	"1"
+			"inset_x"		"10"
+			"inset_y"		"5"
+			"row_gap"		"5"
+			"column_gap"	"20"
+			"restrict_width"	"0"
+
+			"friendpanel_kv"
+			{
+				"wide"		"100"
+				"tall"		"20"
+			}
+
+			"ScrollBar"
+			{
+				"ControlName"	"ScrollBar"
+				"FieldName"		"ScrollBar"
+				"xpos"			"rs1"
+				"ypos"			"0"
+				"tall"			"f0"
+				"wide"			"3" // This gets slammed from client schme.  GG.
+				"zpos"			"1000"
+				"nobuttons"		"1"
+				"proportionaltoparent"	"1"
+
+				"Slider"
+				{
+					"fgcolor_override"	"juliaFG"
+				}
+		
+				"UpButton"
+				{
+					"ControlName"	"Button"
+					"FieldName"		"UpButton"
+					"visible"		"0"
+				}
+		
+				"DownButton"
+				{
+					"ControlName"	"Button"
+					"FieldName"		"DownButton"
+					"visible"		"0"
+				}
+			}
+		}
+
+		"BelowDarken"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldname"		"BelowDarken"
+			"xpos"			"cs-.5"
+			"ypos"			"rs1-10"
+			"zpos"			"499"
+			"wide"			"f20"
+			"tall"			"260"
+			"visible"		"1"	
+			"PaintBackgroundType"	"2"
+			"proportionaltoparent"	"1"
+			"mouseinputenabled"	"0"
+			"border"			"NoBorder"
+			"bgcolor_override"	"0 0 0 0"
+		}
+	}
 
 	"juliaTF2logo"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"juliaTF2logo"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"13"
 		"wide"			"64"
 		"tall"			"64"
 		"visible"		"1"
@@ -271,7 +434,7 @@
 		"labelText"		"team fortress II"
 		"textAlignment" "west"
 		"xpos"			"48"
-		"ypos"			"0"
+		"ypos"			"13"
 		"wide"			"640"
 		"tall"			"64"
 		"textinsetx"	"4"
@@ -297,7 +460,7 @@
 		"use_proportional_insets" "1"
 
 		"textinsetx"	"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"fgcolor" 		"juliaFGT"
 	}
@@ -335,9 +498,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"juliaQuestLogButton"
-		"xpos"			"r96"
-		"ypos"			"16"
-		"zpos"			"10"
+		"xpos"			"r80"
+		"ypos"			"30"
+		"zpos"			"16"
 		"wide"			"32"
 		"tall"			"32"
 		"visible"		"1"
@@ -450,9 +613,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"r144"
-		"ypos"			"16"
-		"zpos"			"10"
+		"xpos"			"r120"
+		"ypos"			"30"
+		"zpos"			"16"
 		"wide"			"32"
 		"tall"			"32"
 		"visible"		"1"
@@ -548,174 +711,13 @@
 
 	///////////////// BUTTONS ///////////////
 
-	"juliaQuickplayButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"juliaQuickplayButton"
-		"xpos"			"16"
-		"ypos"			"64"
-		"wide"			"256"
-		"tall"			"20"
-		"visible"		"1"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"24"
-
-			"visible"		"1"
-			"enabled"		"1"
-		"textinsetx"	"18"
-		"textinsety"	"-7"
-		"use_proportional_insets" "1"
-			"font"			"juliaMedium"
-			"textAlignment"	"west"
-			"default"		"0"
-			"border_default"	"juliaNone"
-			"border_armed"		"juliaNone"
-
-			"paintbackground"	"0"
-			"defaultFgColor_override" "juliaFG"
-			"armedFgColor_override" "juliaFG"
-			"depressedFgColor_override" "juliaFG"
-
-			"image_default"		"replay/thumbnails/play"
-			"image_armed"		"replay/thumbnails/playinverse"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"1"
-				"wide"			"16"
-				"tall"			"16"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-			}
-		}
-	}
-
-	"juliaMannVsMachineButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"juliaMannVsMachineButton"
-		"xpos"			"16"
-		"ypos"			"86"
-		"wide"			"256"
-		"tall"			"20"
-		"visible"		"1"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"24"
-
-			"visible"		"1"
-			"enabled"		"1"
-		"textinsetx"	"18"
-		"textinsety"	"-7"
-		"use_proportional_insets" "1"
-			"font"			"juliaMedium"
-			"textAlignment"	"west"
-			"default"		"0"
-			"border_default"	"juliaNone"
-			"border_armed"		"juliaNone"
-
-			"paintbackground"	"0"
-			"defaultFgColor_override" "juliaFG"
-			"armedFgColor_override" "juliaFG"
-			"depressedFgColor_override" "juliaFG"
-
-			"image_default"		"replay/thumbnails/m"
-			"image_armed"		"replay/thumbnails/minverse"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"1"
-				"wide"			"16"
-				"tall"			"16"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-			}
-		}
-	}
-
-	"juliaCompetitiveButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"juliaCompetitiveButton"
-		"xpos"			"16"
-		"ypos"			"108"
-		"wide"			"256"
-		"tall"			"20"
-		"visible"		"1"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"256"
-			"tall"			"24"
-
-			"visible"		"1"
-			"enabled"		"1"
-		"textinsetx"	"18"
-		"textinsety"	"-7"
-		"use_proportional_insets" "1"
-			"font"			"juliaMedium"
-			"textAlignment"	"west"
-			"default"		"0"
-			"border_default"	"juliaNone"
-			"border_armed"		"juliaNone"
-
-			"paintbackground"	"0"
-			"defaultFgColor_override" "juliaFG"
-			"armedFgColor_override" "juliaFG"
-			"depressedFgColor_override" "juliaFG"
-
-			"image_default"		"replay/thumbnails/target"
-			"image_armed"		"replay/thumbnails/targetinverse"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"1"
-				"wide"			"16"
-				"tall"			"16"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-			}
-		}
-	}
-
 	"juliaServerBrowserButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaServerBrowserButton"
 		"xpos"			"16"
-		"ypos"			"130"
+		"ypos"			"80"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -769,7 +771,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaCreateServerButton"
 		"xpos"			"16"
-		"ypos"			"152"
+		"ypos"			"102"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -824,7 +827,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaItemsButton"
 		"xpos"			"16"
-		"ypos"			"174"
+		"ypos"			"124"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -879,7 +883,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaStoreButton"
 		"xpos"			"16"
-		"ypos"			"196"
+		"ypos"			"146"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -934,7 +939,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaOptionsButton"
 		"xpos"			"16"
-		"ypos"			"218"
+		"ypos"			"168"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -989,7 +995,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaConsoleButton"
 		"xpos"			"16"
-		"ypos"			"240"
+		"ypos"			"190"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1043,7 +1050,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaDemosButton"
 		"xpos"			"16"
-		"ypos"			"262"
+		"ypos"			"212"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1097,7 +1105,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaQuitButton"
 		"xpos"			"16"
-		"ypos"			"284"
+		"ypos"			"234"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1166,7 +1175,7 @@
 		"fieldname"		"juliaCancelButton"
 		"xpos"			"-8"
 		"ypos"			"-8"
-		"zpos"			"3"
+		"zpos"			"15"
 		"wide"			"32"
 		"tall"			"32"
 		"visible"		"1"
@@ -1213,7 +1222,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaPausedLabel"
 		"xpos"			"16"
-		"ypos"			"294"
+		"ypos"			"254"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"64"
 		"visible"		"1"
@@ -1267,7 +1277,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaResumeButton"
 		"xpos"			"16"
-		"ypos"			"358"
+		"ypos"			"308"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1324,7 +1335,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaDisconnectButton"
 		"xpos"			"16"
-		"ypos"			"380"
+		"ypos"			"330"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1381,7 +1393,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaCallVoteButton"
 		"xpos"			"16"
-		"ypos"			"402"
+		"ypos"			"352"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1435,7 +1448,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaMutePlayersButton"
 		"xpos"			"16"
-		"ypos"			"424"
+		"ypos"			"374"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1489,7 +1503,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"juliaReportAbuseButton"
 		"xpos"			"16"
-		"ypos"			"448"
+		"ypos"			"398"
+		"zpos"			"15"
 		"wide"			"256"
 		"tall"			"20"
 		"visible"		"1"
@@ -1570,22 +1585,6 @@
 		"enabled"		"0"
 	}
 
-	"MainMenuBGPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"MainMenuBGPanel"
-		"visible"		"0"
-		"enabled"		"0"
-
-	}
-	"PlayLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayLabel"
-		"tall"			"0"
-		"visible"		"0"
-	}
-
 	"TooltipPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -1607,79 +1606,6 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_Panel"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-
-	"StoreHasNewItemsImage"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"StoreHasNewItemsImage"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-
-
-	"StoreBGPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"StoreBGPanel"
-		"visible"		"0"
-		"enabled"		"0"
-
-	}
-	"CustomizeLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"CustomizeLabel"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-
-	"CreateBGPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"CreateBGPanel"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-	"CreateLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"CreateLabel"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-
-	"VRBGPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"VRBGPanel"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-
-	"BackgroundFooter"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BackgroundFooter"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-	"FooterLine"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"FooterLine"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-	"FreeTrialPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"FreeTrialPanel"
-		"ypos"			"r0"
-		"wide"			"0"
-		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"0"
 	}
