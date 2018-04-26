@@ -24,6 +24,11 @@
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -118,6 +123,11 @@
 
 			"paintbackground"	"0"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -182,7 +192,6 @@
 		"tall"			"f40"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"NoBorder"
 		"proportionaltoparent"	"1"
 
 		if_mini
@@ -191,15 +200,14 @@
 			"ypos"			"cs-0.5"
 			"tall"			"35"
 			"wide"			"505"
-			"border"		"MainMenuBGBorder"
 		}
 
 		"NameLabel"
 		{
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
-			"xpos"			"1"
-			"ypos"			"0"
+			"xpos"			"65"
+			"ypos"			"5"
 			"wide"			"160"
 			"zpos"			"100"
 			"tall"			"30"
@@ -213,22 +221,16 @@
 
 			if_mini
 			{
-				"xpos"			"65"
-				"ypos"			"5"
-				"wide"			"f0"
 				"visible"	"0"
-				"font"			"HudFontSmallishBold"
-				"fgcolor_override"	"TanLight"
-				"textAlignment"	"north-west"
 			}
 		}
 
-		"LevelLabel"
+		"DescLine1"
 		{
-			"ControlName"	"Label"
-			"fieldName"		"LevelLabel"
-			"xpos"			"1"
-			"ypos"			"20"
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine1"
+			"xpos"			"65"
+			"ypos"			"25"
 			"wide"			"160"
 			"zpos"			"100"
 			"tall"			"30"
@@ -237,17 +239,65 @@
 			"font"			"juliaMedium"
 			"fgcolor_override"	"juliaFG"
 			"textAlignment"	"north-east"
-			"labelText"		"%level%"
+			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
-				"wide"			"f0"
-				"font"			"HudFontSmallestBold"
+				"wide"	"195"
+				"font"	"HudFontSmallestBold"
 				"fgcolor_override"	"TanLight"
 				"textAlignment"	"north-west"
+			}
+
+			"fonts"
+			{
+				"0"		"juliaMedium"
+				"1"		"juliaMedium"
+				"2"		"juliaMedium"
+			}
+		}
+
+		"DescLine2"
+		{
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine2"
+			"xpos"			"65"
+			"ypos"			"25"
+			"wide"			"160"
+			"zpos"			"100"
+			"tall"			"30"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"juliaMedium"
+			"fgcolor_override"	"juliaFG"
+			"textAlignment"	"north-east"
+			"labelText"		"%desc2%"
+			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"xpos"	"67"
+				"ypos"	"4"
+				"wide"	"195"
+				"font"	"HudFontSmallestBold"
+				"fgcolor_override"	"TanLight"
+				"textAlignment"	"north-west"
+			}
+
+			"fonts"
+			{
+				"0"		"juliaMedium"
+				"1"		"juliaMedium"
+				"2"		"juliaMedium"
+			}
+
+			"colors"
+			{
+				"1"		"CreditsGreen"
+				"2"		"juliaFG"
 			}
 		}
 
@@ -255,8 +305,8 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"0"
-			"ypos"			"-10"
+			"xpos"			"64"
+			"ypos"			"0"
 			"wide"			"160"
 			"tall"			"f0"
 			"proportionaltoparent"	"1"
