@@ -229,3 +229,15 @@ event HudMatchSummary_ShowMatchWinDoors
 	SetVisible MatchDoors	0 7
 	SetVisible	FrontParticlePanel	0	7
 }
+
+event CompetitiveGame_LowerChatWindow
+{
+}
+event CompetitiveGame_RestoreChatWindow
+{
+}
+event HudTournament_MoveChatWindow
+{
+}
+
+//===========================================
