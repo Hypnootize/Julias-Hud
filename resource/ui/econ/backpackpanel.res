@@ -47,7 +47,7 @@
 			"visible"		"0"
 			"bgcolor_override"		"Blank"
 			"noitem_textcolor"		"Blank"
-			"PaintBackgroundType"	"1"
+			"PaintBackgroundType"	"0"
 			"paintborder"	"0"
 
 			"Button"
@@ -59,7 +59,7 @@
 				"visible"		"1"
 				"bgcolor_override"		"Blank"
 				"noitem_textcolor"		"Blank"
-				"PaintBackgroundType"	"1"
+				"PaintBackgroundType"	"0"
 				"paintborder"	"0"
 				"textAlignment"	"center"
 				"labelText"		"%page%"
@@ -381,7 +381,7 @@
 		"visible"		"0"
 		"bgcolor_override"		"0 0 0 0"
 		"noitem_textcolor"		"0 0 0 0"
-		"PaintBackgroundType"	"1"
+		"PaintBackgroundType"	"0"
 		"paintborder"	"0"
 
 		"model_ypos"	"0"

@@ -10,7 +10,7 @@
 		"ypos"			"48"
 		"wide"	 		"256"
 		"tall"	 		"128"
-		"PaintBackgroundType"	"1"
+		"PaintBackgroundType"	"0"
 		"bgcolor_override"		"0 0 0 255"
 	}
 

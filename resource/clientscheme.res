@@ -3078,32 +3078,32 @@ Scheme
 		ScrollBarButtonBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 
 		ScrollBarButtonDepressedBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 
 		ButtonBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 
 		// this is the border used for default buttons (the button that gets pressed when you hit enter)
 		ButtonKeyFocusBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 
 		ButtonDepressedBorder
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 
 		ComboBoxBorder
@@ -3445,12 +3445,12 @@ Scheme
 		Econ.Button.Border.Default
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 		Econ.Button.Border.Armed
 		{
 			"inset" "0 0 0 0"
-			"backgroundtype" "1"
+			"backgroundtype" "0"
 		}
 
 		LoadoutItemMouseOverBorder

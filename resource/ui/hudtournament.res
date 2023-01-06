@@ -26,17 +26,10 @@
 		"name_width"	"32"
 		"horiz_inset"	"0"
 
-		//if_mvm
-		//{
-		//	"xpos"					"c-250"
-		//	"ypos"					"0"
-		//	"wide"					"500"
-		//	"tall"					"480"
-//
-		//	"team1_player_base_y"			"66"
-		//	"team2_player_base_y"			"66"
-		//	"team2_player_delta_x"			"52"
-		//}
+		if_mvm
+		{
+			"team1_player_base_y"			"75"
+		}
 //
 		//if_competitive
 		//{
@@ -291,6 +284,10 @@
 		{
 			"visible"		"0"
 		}
+		if_mvm
+		{
+			"visible"		"0"
+		}
 		if_competitive
 		{
 			"visible"		"0"
@@ -310,6 +307,10 @@
 		"fillcolor"		"juliaBlue"
 		
 		if_readymode
+		{
+			"visible"		"0"
+		}
+		if_mvm
 		{
 			"visible"		"0"
 		}
@@ -396,6 +397,10 @@
 		{
 			"visible"		"0"
 		}
+		if_mvm
+		{
+			"visible"		"0"
+		}
 		if_competitive
 		{
 			"visible"		"0"
@@ -419,6 +424,10 @@
 		"enabled"		"1"
 		
 		if_readymode
+		{
+			"visible"		"0"
+		}
+		if_mvm
 		{
 			"visible"		"0"
 		}
@@ -532,6 +541,10 @@
 		{
 			"visible"		"0"
 		}
+		if_mvm
+		{
+			"visible"		"0"
+		}
 		if_competitive
 		{
 			"visible"		"0"
@@ -554,6 +567,10 @@
 		"visible"		"1"
 		"enabled"		"1"
 		if_readymode
+		{
+			"visible"		"0"
+		}
+		if_mvm
 		{
 			"visible"		"0"
 		}
